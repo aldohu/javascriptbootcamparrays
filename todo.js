@@ -32,9 +32,22 @@ const deleteTodo = function(arr, prop) {
 //2. create function to remove todo by text value
 
 
-deleteTodo(toDo, 'sleep')
 
-console.log(toDo);
+//find todos with completed = true value
+
+
+const getThingsTodo = (todo) => {
+   return todo.filter(e=>
+     e.completed === false)
+        
+    
+
+}
+//deleteTodo(toDo, 'sleep')
+
+//console.log(toDo);
+
+console.log(getThingsTodo(toDo))
 
 
 
